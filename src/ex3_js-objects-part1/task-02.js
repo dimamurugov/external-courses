@@ -3,4 +3,4 @@ function ObjOut(object) {
 		console.log(key + ": " + object[key]);
 	};
 };
-module.exports = ObkOut
+module.exports = ObjOut
