@@ -1,4 +1,4 @@
-function Mass(arr){
+function searchClearNumInArray(arr){
 	var arr1 = [0,0,0];
 	for(var i = 0; i < arr.length; i++){
 		if (typeof arr[i] != "number") continue;
@@ -10,4 +10,4 @@ function Mass(arr){
 	};
 	return arr1;	
 };
-module.exports = Mass;
+module.exports = searchClearNumInArray;
