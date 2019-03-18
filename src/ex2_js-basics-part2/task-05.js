@@ -1,8 +1,8 @@
-function Mass(arr){
+function searchMaxElement(arr){
 	var max = null;
 	for(var i = 0; i < arr.length; i++){
 		if (max < arr[i]) {max = arr[i]} 
 	}	
 	return max;
 };
-module.exports = Mass;
+module.exports = searchMaxElement;
