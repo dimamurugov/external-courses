@@ -1,6 +1,5 @@
-
- function TypeOfValue(a) {
-	
+function typeOfValue(a) {
+	if(isNaN(a)) return undefined;
 	switch (typeof a) {
 		case 'number':
 			return 'number'; 
@@ -8,7 +7,6 @@
 			return 'string';
 		default:	
 			return undefined;	
-	} 
-	//return 'Undefined';	
+	} 		
 }
 module.exports = TypeOfValue;
