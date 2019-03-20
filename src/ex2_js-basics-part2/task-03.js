@@ -1,4 +1,4 @@
-function searchClearNumInArray(arr){
+ function searchClearNumInArray(arr){
 	var arr1 = [0,0,0];
 	for(var i = 0; i < arr.length; i++){
 		if (typeof arr[i] != "number") continue;
@@ -9,5 +9,5 @@ function searchClearNumInArray(arr){
 			} else {arr1[1] = arr1[1] + 1};
 	};
 	return arr1;	
-};
+}; 
 module.exports = searchClearNumInArray;
