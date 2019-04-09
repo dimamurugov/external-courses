@@ -9,5 +9,4 @@ function CutStr(str, Num) {
  	}
 	return str;
 }
-
-module.exports = upFirstRegister;  
+module.exports = upFirstRegister;

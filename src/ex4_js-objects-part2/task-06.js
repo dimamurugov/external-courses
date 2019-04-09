@@ -13,5 +13,4 @@ function zoomFirstLetters(str) {
   }
 	return str1
 }
-
 module.exports = zoomFirstLetters;

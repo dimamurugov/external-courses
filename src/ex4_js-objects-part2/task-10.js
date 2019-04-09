@@ -3,5 +3,4 @@ function toFlipString(str) {
 	str1.reverse();
 	return str1.join("");
 }
-
 module.exports = toFlipString;

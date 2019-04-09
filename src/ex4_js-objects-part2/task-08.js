@@ -8,5 +8,4 @@ function strChangeCamelCase(str) {
 	};
 	return temp.join("");
 }
-
 module.exports = strChangeCamelCase;

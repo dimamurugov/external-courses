@@ -6,12 +6,11 @@ function searchStrInStr(str, str1) {
 			flag = true;
 			j++;
 			if (j > str1.length-1) return flag;
-		} else { 
+		} else {
 			flag = false;
 			j = 0;
 		}
 	}
 	return flag;
 } 
-
 module.exports = upFirstRegister

@@ -7,5 +7,6 @@ function searchInProto(Param, obj) {
 		return obj[Param];
 	}
 	return undefined;
-} 
+}
+
 module.exports = searchInProto;

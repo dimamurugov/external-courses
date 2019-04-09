@@ -13,4 +13,5 @@ function toSearchForReps(str) {
 	}
 	return temp;
 }
+
 module.exports = toSearchForReps;
