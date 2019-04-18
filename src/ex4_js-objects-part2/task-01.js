@@ -6,7 +6,7 @@ function searchInProto(Param, obj) {
 	if (!obj.hasOwnProperty(Param)) {
 		return obj[Param];
 	}
-	return undefined;
+	return undefined 
 }
 
 module.exports = searchInProto;
