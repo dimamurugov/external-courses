@@ -1,0 +1,50 @@
+form {
+  width: 400px;
+  height: 600px;
+}
+#title:after {
+  position: absolute;
+  top: 35px;
+  left: 8px;
+  content: "*required fields";
+  color: red;
+  font-size: 70%;
+}
+#container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px 60px;
+}
+#button {
+  padding: 7px 30px;
+  margin: 15px 50px;
+}
+.label {
+  position: absolute;
+  width: 100px;
+  height: 26px;
+  background-color: #d55151;
+  color:#f5d9d9;
+  font: bold 70% sans-serif;
+}
+h4 {
+  position: absolute;
+  Left: 10px;
+  top: -8px;
+}
+#First.label {
+  top: 118px;
+  Left: 350px;
+}
+#Second.label {
+  top: 163px;
+  Left: 350px;
+}
+.label2 {
+  font-size: 120%;
+  position: absolute;
+  top: -12px;
+  left: -10px;
+  color:#d55151;
+}
