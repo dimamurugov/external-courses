@@ -1,0 +1,132 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#loader span {
+    height: 30px;
+    width: 30px;
+    border: 1px solid green;
+    margin: 0 10px 0 10px;
+}
+#Loader2 {
+  position: absolute;
+  animation: loader2 2s ease-in-out 0.2s infinite;
+  left: 638px;
+}
+#Loader1 {
+  position: absolute;
+  animation: loader1 2s ease-in-out 0.2s infinite;
+  left: 638px;
+}
+@keyframes loader1 {
+
+    from {
+        border-radius: 0%;
+    }
+
+    50% {
+        transform: rotate(90deg);
+
+    }
+
+    to {
+        border-radius: 0%;
+        transform: rotate(180deg);
+    }
+
+}
+@keyframes loader2 {
+
+    from {
+        border-radius: 0%;
+    }
+
+
+    50% {
+        transform: rotate(-90deg);
+
+    }
+
+    to {
+        border-radius: 0%;
+        transform: rotate(-180deg);
+    }
+
+}
+#ballBetweenWall {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 30px;
+  width: 200px;
+  height: 170px;
+  position: relative;
+}
+.wall {
+  width: 10px;
+  height: 150px;
+  background-color: black;
+  margin: 0 10px 0 10px;
+}
+.ball {
+  width: 20px;
+  height: 20px;
+  border: 1px solid green;
+  border-radius: 50%;
+  left: 90px;
+  position: absolute;
+  animation: jump 2s linear 0.2s infinite;
+}
+@keyframes jump {
+  from {
+    left: 18px;
+    bottom: 40px;
+  }
+  50% {
+    left: 165px;
+    bottom: 40px;
+  }
+  to {
+    left: 20px;
+    bottom: 40px;
+  }
+}
+#circle {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  animation: infinity 2s linear 0.2s infinite;
+}
+@keyframes infinity {
+  from {
+    border-radius: 50%;
+    background: radial-gradient(#FFD700, #FF6347);
+  }
+  10% {
+    border-radius: 50%;
+  }
+  25% {
+    border-radius: 0%;
+  }
+  30% {
+    background: radial-gradient(#FF8C00, #FFB6C1);
+  }
+  45% {
+    transform: scale(3);
+    transform: skew(20deg);
+  }
+  60% {
+    transform: rotate(180deg);
+  }
+  75% {
+    background: radial-gradient(#00FFFF, #98FB98);
+  }
+  90% {
+    border-radius: 50%;
+  }
+  to {
+    border-radius: 50%;
+  }
+}
