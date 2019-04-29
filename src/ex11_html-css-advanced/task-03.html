@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="task-03.css">
+        <title>task-03</title>
+    </head>
+    <body>
+        <form>
+            <div id="title">
+                <input type="text" required="" placeholder="Title" pattern="[A-Za-z]{1,}" >
+                <div class="text">Title</div>
+            </div>
+
+            <div id="priceAndLocation">
+                <div class="price">
+                    <input  type="text" required="" placeholder="Price" pattern="[0-9]{1,}" >
+                    <div class="text">Prcie</div>
+                </div>
+                <div class="location">
+                    <input type="text" required="" placeholder="Specific location (optional)" pattern="[A-Za-z]{1,}" >
+                    <div class="text">Specific location (optional)</div>
+                </div>
+            </div>
+
+            <div id="description">
+                <input type="text" placeholder="Description" pattern="[A-Za-z]{1,}" required="">
+                <div class="text">Description</div>
+            </div>
+
+        </form>
+    </body>
+</html>
