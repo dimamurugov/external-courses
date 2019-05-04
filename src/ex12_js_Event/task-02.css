@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.menu {
+  margin: 0px 0 0 20px;
+  width: 120px;
+  height: 200px;
+  border-radius: 5px;
+  color: #d6f1fc;
+}
+
+.menu ul {
+  background-color: #35baf5;
+  list-style: none;
+  padding: 0 30px;
+  display: none;
+  border-bottom: 2px solid #62bcfa;
+}
+.NameMenu {
+  margin: 0px;
+  background-color: #35baf5;
+  border-radius: 0 0 8px 8px;
+  padding: 0 21px;
+}
+.menu.open ul {
+  display: block;
+}
+.menu.open2 .NameMenu {
+  box-shadow: 0 0 10px #35baf5;
+}
+li.highlight {
+  background-color: #03a9f5;
+}
+li {
+  width: 90px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
