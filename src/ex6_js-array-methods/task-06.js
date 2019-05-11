@@ -1,13 +1,13 @@
 function myReduce(array, callback,initialValue) {
 	var previousValue;
-	var k = 0;
+	var firstElement = 0;
 	if (initialValue !== undefined) {
 		previousValue = initialValue;
 	} else {
 			previousValue = array[0];
-			k++;
+			firstElement++;
 	};
-	for (var i = k; i < array.length; i++) {
+	for (var i = firstElement; i < array.length; i++) {
 		previousValue = callback(previousValue, array[i], i, array);
   };
   return previousValue
