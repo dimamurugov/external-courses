@@ -1,32 +1,33 @@
 function mySlice(arr,begin,end) {
-	var arr2 = [];
-	var j = 0;
-  var beginIn = begin;
-  var endIn = end;
+	var result, j, stary, finish;
+	result = [];
+	j = 0;
+  start = begin;
+  finish = end;
 	if (((begin >= 0) || (begin === undefined)) && ((end >= 0) || (end === undefined))) {
     if (typeof begin === 'undefined') {
-			beginIn = 0;
+			start = 0;
 		};
 		if (typeof end === 'undefined') {
-			endIn = arr.length;
+			finish = arr.length;
 		};
-		for (var i = beginIn; i < endIn; i++) {
-				arr2[j] = arr[i];
+		for (var i = start; i < finish; i++) {
+				result[j] = arr[i];
 				j++;
 		};
 	} else {
 		if (typeof end === 'undefined') {
-			endIn = arr.length*(-1);
+			finish = arr.length*(-1);
 		};
 		if (typeof begin === 'undefined') {
-			beginIn = arr.length;
+			start = arr.length;
 		};
-		for (var k = arr.length + beginIn; k < arr.length + endIn; k++) {
-			arr2[j] = arr[k];
+		for (var k = arr.length + start; k < arr.length + finish; k++) {
+			result[j] = arr[k];
 			j++;
 		}
 	};
-	return arr2
+	return result
 }
 
 module.exports = mySlice
