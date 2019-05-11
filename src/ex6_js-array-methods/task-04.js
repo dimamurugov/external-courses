@@ -1,13 +1,14 @@
 function myFilter(array, callback) {
-	var array2 = [];
-	var j = 0;
+	var result, j;
+	result = [];
+	j = 0;
 	for (var i = 0; i < array.length; i++) {
     if (callback(array[i], i, array)){
-			array2[j] = array[i];
+			result[j] = array[i];
 			j++;
     }
   };
-  return array2;
+  return result;
 }
 
 module.exports = myFilter;
