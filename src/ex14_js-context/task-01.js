@@ -44,7 +44,7 @@ var Calculator = {
     },
 
      reset: function() {
-        this.state = 0;
+        this.result = 0;
         return this;
     },
 
@@ -57,4 +57,4 @@ var Calculator = {
     }
 };
 
-module.exports = Calculator; 
+module.exports = Calculator;
