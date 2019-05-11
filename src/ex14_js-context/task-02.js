@@ -29,6 +29,7 @@ function Hangman(word) {
         });
     }
 
+    
     guessedString = guessedString.join('');
 
     if (guessed) {
