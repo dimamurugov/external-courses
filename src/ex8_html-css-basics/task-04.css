@@ -1,0 +1,28 @@
+@font-face {
+  font-family: alpha_echo-webfont;
+  src: url(fonts/alphaecho_regular_macroman/alpha_echo-webfont.woff);
+}
+div {
+  border: 5px solid black;
+  border-radius: 3%;
+  background-color: #FF8C00;
+  width: 400px;
+}
+body {
+  background-color: #deb887;
+}
+ol {
+  width: 150px;
+  background-image: url("image3.jpg");
+}
+h4 {
+  font-family: alpha_echo-webfont;
+  font-size: 120%;
+}
+li {
+  font-size: 18pt;
+}
+p {
+  border: 5px solid #FF6347;
+
+}
