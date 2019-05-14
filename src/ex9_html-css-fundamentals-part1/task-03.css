@@ -4,11 +4,11 @@ div {
   width: 90px;
   height: 25px;
 }
-#First {
+#layer1 {
   border: 0.5px solid #7e7e7e;
   border-radius: 6px;
 }
-#Second {
+#layer2 {
   position: absolute;
   background-color: #e3e3e3;
   left: 9px;
@@ -18,7 +18,7 @@ div {
   border: 0.5px solid #e3e3e3;
   border-radius: 6px;
 }
-#Thrid {
+#layer3 {
   position: absolute;
   border: 0.5px solid #9c9c9c;
   border-radius: 6px;
@@ -28,7 +28,7 @@ div {
   height: 20px;
   box-shadow: 0 0 1px rgba(0,0,0,0.5);
 }
-#Fourth {
+#layer4 {
   background-color: rgba(198, 198, 198, 0.4);
   position: absolute;
   border: 0.1px solid rgba(196, 197, 193, 1);
@@ -48,7 +48,7 @@ span {
 .star {
   color: #898989;
 }
-#chek {
+#title {
   font-family: Arial;
   font-weight: bold;
   color: #545454;
