@@ -1,19 +1,14 @@
-main {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
+
 body {
   padding: 30px;
 }
 header {
   background: lightblue;
-  width: 97%;
 }
 section {
+  display: flex;
+  flex-direction: column;
   background: lightgreen;
-  width: 75%;
-  float: left;
 }
 article {
   background: white;
@@ -21,9 +16,16 @@ article {
 }
 aside {
   background: pink;
-  width: 22%;
-  float: right;
 }
-header, article, section, .module {
+header, article, section {
   padding: 1rem;
+}
+.module {
+  background: pink;
+  padding: 10px;
+  flex-basis: 25%;
+}
+.secondLine {
+  display: flex;
+  flex-direction: row;
 }
