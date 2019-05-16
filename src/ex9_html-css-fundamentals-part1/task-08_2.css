@@ -1,0 +1,31 @@
+
+body {
+  padding: 30px;
+}
+header {
+  background: lightblue;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  background: lightgreen;
+}
+article {
+  background: white;
+  margin: 0 0 1rem 0;
+}
+aside {
+  background: pink;
+}
+header, article, section {
+  padding: 1rem;
+}
+.module {
+  background: pink;
+  padding: 10px;
+  flex-basis: 25%;
+}
+.secondLine {
+  display: flex;
+  flex-direction: row;
+}
