@@ -13,7 +13,6 @@ AccountingCalculator.prototype.round = function(value) {
      return this;
 };
 
-
 var accountCal = new AccountingCalculator("Бухгалтерский калькулятор");
 
 accountCal.round(1.1234567);

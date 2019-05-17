@@ -33,7 +33,6 @@ SimpleCalculator.prototype.divide = function(num) {
         return this;
     };
 var calculatorSimple = new SimpleCalculator("Обычный калькулятор");
-
 var resultCalculater = calculatorSimple.add(100)
     .multiply(2)
     .divide(20)

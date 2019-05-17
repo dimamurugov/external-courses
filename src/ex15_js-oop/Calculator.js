@@ -20,6 +20,5 @@ function Calculator(name) {
     if(this.__isNumeric(value)) {
         this.__result = value;
     }
-
      return this;
 };
