@@ -1,3 +1,5 @@
+@import "font-awesome-sprockets";
+@import "font-awesome";
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +9,11 @@ body {
   flex-direction: column;
   margin: 0;
   padding: 0;
-  /* height: 1200px; */
+  height: 100vh;
 }
+
+/* website header */
+
 header {
   width: 100%;
   /* height: 45px; */
@@ -66,6 +71,9 @@ header div {
   font-weight: 400;
   line-height: 26px;
 }
+
+/* site footer */
+
 footer {
   display: flex;
   justify-content: flex-end;
@@ -77,28 +85,59 @@ footer {
     bottom: 0;
     left: 0;
 }
+
+
 #main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 45px;
   margin-bottom: 45px;
-  /* height: 550px; */
-  /* width: 1225px; */
+  width: 100%;
 }
-.menu  {
+
+
+#footerConteiner {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
+#iconQustion {
+  width: 14px;
+  height: 15px;
+  color: #ffffff;
+  background-image: url(qustion.png);
+  background-repeat: no-repeat;
+}
+#iconShest {
+  width: 14px;
+  height: 15px;
+  color: #ffffff;
+  background-image: url(shester.png);
+  background-repeat: no-repeat;
+}
+.footerElemtnt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 45px;
+  background-color: #1f2637;
+}
+.footerElemtnt:hover {
+    background-color: #15a4fa;
+}
+
+/* bar site */
+
 .Bar {
   display: flex;
   align-items: center;
   flex-direction: column;
   position: relative;
   width: 450px;
-  /* height: 600px; */
+  height: 100%;
   background-color: #1f2637;
-  overflow: auto;
+  overflow-y: scroll;
 }
 button {
   position: relative;
@@ -110,6 +149,7 @@ button {
   color:#ffffff;
   margin: 45px 0px;
   left: -10px;
+  cursor: pointer;
  }
 .Bar .button i {
   position: relative;
@@ -148,7 +188,7 @@ a {
 .navigation {
   position: relative;
   top: 0px;
-  width: 200px;
+  /* width: 200px; */
   border-top: 4px solid #181e2c;
   border-bottom: 4px solid #181e2c;
 }
@@ -162,7 +202,7 @@ a {
  .categories {
   position: relative;
   top: 20px;
-  width: 200px;
+  /* width: 200px; */
   border-bottom: 4px solid #181e2c;
 }
 .categories .navList li::before {
@@ -229,6 +269,12 @@ a {
     color: #6f7d95;
 }
 
+/* site menu */
+.menu  {
+  display: flex;
+  flex-direction: column;
+}
+
 #titleBlock {
   height: 70px;
   background-color: #eef1f7;
@@ -257,13 +303,19 @@ a {
   display: flex;
   align-items: center;
   margin-left: 20px;
+  cursor: pointer;
 }
 #MenuBooks span {
   padding: 0px 15px;
   font-family: Arial;
   color: #8c97b2;
 }
-#MenuBooks span:nth-child(1) {
+/* #MenuBooks span:nth-child(1) {
+  border-radius: 10px;
+  background-color: #97b3ce;
+  color: #ffffff;
+} */
+#MenuBooks span:hover {
   border-radius: 10px;
   background-color: #97b3ce;
   color: #ffffff;
@@ -285,22 +337,24 @@ a {
   position: relative;
   width: 15px;
   height: 15px;
-  left: 380px;
-  top: 25px;
+  left: 385px;
+  top: -5px;
 }
 #Search {
   display: flex;
   align-items: center;
 }
+
+/* Content container */
+
 #content {
   display: flex;
   flex-wrap: wrap;
-  /* height: 850px; */
+  height: 100%;
   overflow: scroll;
   margin-left: 20px;
-
 }
-#content div {
+#content div { 
   margin: 15px 30px;
   width: 180px;
   height: 300px;
@@ -318,40 +372,33 @@ a {
   font-size: 10px;
 }
 
+
+.topStar>p {
+  font-size: 20px;
+  margin: 0px 2px;
+  font-family: 'FontAwesome';
+  display: inline-block;
+  position: relative;
+}
+.topStar>p::before {
+  content: "☆";
+  color: #fdcf03;
+}
 .topStar {
   display: flex;
-  color: yellow;
+  flex-direction: row-reverse;
   bottom:  0px;
-}
-.topStar {
+  margin-right: 75px;
   font-size: 23px;
+  cursor: pointer;
 }
-#footerConteiner {
-  display: flex;
-  flex-direction: row;
+.topStar>p:hover:before,
+.topStar>p:hover~p:before {
+  content: "★";
 }
-#iconQustion {
-  width: 14px;
-  height: 15px;
-  color: #ffffff;
-  background-image: url(qustion.png);
-  background-repeat: no-repeat;
+.topStar>p.rated::before,
+.topStar>p.rated~p::before {
+  content: "★";
 }
-#iconShest {
-  width: 14px;
-  height: 15px;
-  color: #ffffff;
-  background-image: url(shester.png);
-  background-repeat: no-repeat;
-}
-.footerElemtnt {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 55px;
-  height: 45px;
-  background-color: #1f2637;
-}
-.footerElemtnt:hover {
-    background-color: #15a4fa;
-}
+
+

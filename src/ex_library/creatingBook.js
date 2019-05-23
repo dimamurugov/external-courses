@@ -12,6 +12,7 @@ request.onload = function() {
   }
 };
 request.send();
+var flag = true;
 
 function showBooks(jsonObj) {
   for (var i=0;i<jsonObj.length; i++) {
@@ -22,17 +23,15 @@ function showBooks(jsonObj) {
     var nameBook = document.createElement('h4');
     var allStar = document.createElement('span');
     allStar.className = "topStar";
-    allStar.id = "starid";
-
-
+    myDiv.setAttribute('data_rating', book.rating );
     for (var j = 0; j < 5; j++) {
       var star = document.createElement('p');
-      star.textContent = '☆';
       allStar.appendChild(star);
-    }
-
-
-
+      if (5 - j === book.rating) {
+        star.classList.add("rated");
+      };
+    };
+    
     nameBook.textContent = jsonObj[i].title;
     image.src = jsonObj[i].image_url;
     athor.textContent = 'by ' + jsonObj[i].author.firstName + ' ' + jsonObj[i].author.lastName;
@@ -42,17 +41,8 @@ function showBooks(jsonObj) {
     myDiv.appendChild(athor);
     myDiv.appendChild(allStar);
     content.appendChild(myDiv);
-  }
+
+    allStar.addEventListener('click', onClickRating);
+  }   
 }
-
-var topStar = document.getElementById('starid');
-var selectedStar;
-
- topStar.onmouseover = function(event) {
-  var nowTarget = event.target;
-  if (nowTarget.tagName != 'P') {
-    return;
-  }
-  console.log(event.target);
-  // highlight(event.target);
-};
+    
