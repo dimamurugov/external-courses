@@ -7,8 +7,8 @@ html {
 }
 body {
     margin: 0;
-    width: 2000px;
-    height: 1700px;
+    /* width: 100%; */
+    /* height: 1700px; */
 }
 header {
   display: Flex;
@@ -26,7 +26,7 @@ header {
     display: none;
 }
 
-#One, #Two, #Three {
+.platform {
     margin: 5px;
     width: 60px;
     height: 10px;
@@ -44,12 +44,7 @@ header {
   position: relative;
   top: 25px;
 }
-.Separator {
-  width: 2px;
-  height: 30px;
-  background-color: #bcbec3;
-  justify-self: center;
-}
+
 
 .Panel {
   display: flex;
@@ -78,16 +73,20 @@ header {
  }
 
 #item1 {
-  height: 31px;
+  height: 34px;
   width: 28px;
   background-image: url(image/phone.svg);
   background-repeat: no-repeat;
+  border-right: 2px solid #bcbec3;
+  padding: 0 25px 0 0;
 }
 #item2 {
-  height: 38px;
+  height: 34px;
   width: 28px;
   background-image: url(image/Ucaz.svg);
   background-repeat: no-repeat;
+  border-right: 2px solid #bcbec3;
+  padding: 0 25px 0 0;
 }
 #item3 {
   height: 30px;
@@ -111,19 +110,23 @@ header {
     align-items: center;
 }
 
-.divideList {
+/* .divideList {
     width: 1px;
     height: 86px;
     background-color: #eceef4;
     font-size: 15px;
     position: relative;
-}
+} */
 
 li {
     list-style-type: none;
-    padding: 0px 20px 0px 20px;
-}
+    padding: 20px 20px 20px 20px;
+    border-right: 2px solid #eceef4;
 
+}
+li:last-child {
+    border-right: 0px;
+}
 li a {
     width: 122px;
     height: 10px;
@@ -143,7 +146,7 @@ li a {
     position: absolute;
     border: 18px solid transparent;
     border-bottom: 10px solid #1faae2;
-    bottom: -35px;
+    bottom: -25px;
 }
 #homeTriangle::before {
     left: 0;
@@ -290,11 +293,15 @@ li a {
     color: #cc9800;
     left: 492px;
 }
-
+#thirdImage {
+    background-color: #bcbec3;
+    width: 85px;
+    height: 241px;
+}
 #thirdImageArrow {
     z-index: 4;
     position: absolute;
-    right: 44px;
+    right: 30px;
     top: 101px;
 }
 
@@ -336,67 +343,4 @@ li a {
 
 #searchLaptop {
     display: none;
-}
-@media (max-width: 1345px) and (max-height: 1280px) {
-
-    html, body {
-        margin: 0;
-        width: 1345px;
-        height: 1280px;
-    }
-
-    #header {
-        justify-content: space-between;
-    }
-    #navigation, #mainSubImage, #icons, #info {
-        display: none;
-    }
-
-    #logoDesktop {
-        display: none;
-    }
-
-    #logoLaptop {
-        margin: 0;
-    }
-
-    #logoLaptop, #searchLaptop, #burgerMenu {
-        display: block;
-    }
-
-    #searchLaptop {
-        margin-right: 25px;
-    }
-
-    #mainContainer {
-        width: 1345px;
-        height: 736px;
-        background-image: url('ibackLaptop.png')
-    }
-
-    #articles {
-        flex-direction: column;
-    }
-
-    #article {
-        width: 969px;
-        margin: 0;
-    }
-
-    #mainTextUppercase {
-        top: 261px;
-        left: 288px;
-    }
-
-    #specChar {
-        top: 274px;
-        left: 296px;
-    }
-
-    #mainText {
-        top: 305px;
-        left: 389px;
-    }
-
-
 }
