@@ -1,11 +1,11 @@
 var request = new XMLHttpRequest();
 request.open('GET', 'https://rsu-library-api.herokuapp.com/books', true);
-
+var data = [];
 request.onload = function() {
   if (request.status >= 200 && request.status < 400) {
-    var data = JSON.parse(request.responseText);
+    data = JSON.parse(request.responseText);
     var myJSON = data;
-    console.log(myJSON)
+    console.log(myJSON);
     showBooks(data);
   } else {
     console.log("не загрузилось");
@@ -15,7 +15,7 @@ request.send();
 var flag = true;
 
 function showBooks(jsonObj) {
-  for (var i=0;i<jsonObj.length; i++) {
+  for (var i=0; i < jsonObj.length; i++) {
     var book = jsonObj[i];
     var myDiv = document.createElement('div');
     var athor = document.createElement('h6');
@@ -43,6 +43,8 @@ function showBooks(jsonObj) {
     content.appendChild(myDiv);
 
     allStar.addEventListener('click', onClickRating);
+
+    var filterBooks = document.getElementById('filterBooks');
+    filterBooks.addEventListener('click', onClickFilter);
   }   
 }
-    
