@@ -14,18 +14,18 @@
 
             <div id="priceAndLocation">
                 <div class="price">
-                    <input  type="text" required="" placeholder="Price" pattern="[0-9]{1,}" >
-                    <div class="text">Prcie</div>
+                    <input id="myPrice" type="text" required="" placeholder="Price" pattern="[0-9]{1,}" >
+                    <label class="text" for="myPrice">Price</label>
                 </div>
                 <div class="location">
-                    <input type="text" required="" placeholder="Specific location (optional)" pattern="[A-Za-z]{1,}" >
-                    <div class="text">Specific location (optional)</div>
+                    <input id="myLocation"type="text" required="" placeholder="Specific location (optional)" pattern="[A-Za-z]{1,}" >
+                    <label class="text" for="myLocation">Specific location (optional)</label>
                 </div>
             </div>
 
             <div id="description">
-                <input type="text" placeholder="Description" pattern="[A-Za-z]{1,}" required="">
-                <div class="text">Description</div>
+                <input id="myDescription" type="text" placeholder="Description" pattern="[A-Za-z]{1,}" required="">
+                <label class="text" for="myDescription">Description</label>
             </div>
 
         </form>
