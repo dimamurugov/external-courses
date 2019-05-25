@@ -1,121 +1,120 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link href="task-01.css" rel="stylesheet">
-    <meta charset="utf-8">
-    <title>task-01</title>
-  </head>
-  <body>
-    <form action="http://httpbin.org/post" method="post">
-      <div class="First">
-        <ul>
-          <li>
-            <label for="Surname">Surname</label>
-            <input type="text" id="Surname">
-          </li>
 
-          <li>
-            <label for="Firstname">Firstname</label>
-            <input type="text" id="Firstname">
-          </li>
+<head>
+  <link href="task-01.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>task-01</title>
+</head>
 
-          <li>
-            <label for="Middlename">Middlename</label>
-            <input type="text" id="Middlename">
-          </li>
-
-          <li>
-            <label for="You">You are</label>
-            <input type="radio" id="You" value="male" checked> male
-            <input type="radio" id="you2" value="female" checked> female
-          </li>
-
-          <li>
-          <label for="age">Age</label>
-          <input class="valid" type="number" id="age" min="18" max="101">
-          </li>
-
-          <li>
-            <label for="from">Country of Residence</label>
-            <select id="from" size="1">
-              <option value="Rus" >Россия</option>
-              <option value="Usa">США</option>
-            </select>
-          </li>
-
-          <li>
-          <label for="Ryz">City</label>
-          <input type="checkbox" id="Ryz" checked> Ryazan
-          <input type="checkbox" id="Mosc" checked> Moscow
-          </li>
-
-          <li>
-          <label for="file">Photography</label>
-          <input type="file" id="file">
-          </li>
-          <li><hr></li>
-
-
-          <li>
-          <label for="title">Title</label>
-          <select id="title" size="8" multiple>
-            <optgroup label="Technologies">
-              <option value="r1">Web Master</option>
-              <option value="r2">Database Administrator</option>
-              <option value="r3">Computer-aided design</option>
-            </optgroup>
-            <optgroup label="Finance">
-              <option value="u1">Economic Planning</option>
-              <option value="u2">Management accounting</option>
-              <option value="u3">Budgeting and planning</option>
-            </optgroup>
-          </select>
-          </li>
-
-          <li>
-          <label for="range">Salary</label>
-          <input type="range" id="range" min="0" max="100" step="1" value="50">
-          </li>
-
-          <li>
-          <textarea id="tell" name="comment">Tell us about yourself...</textarea>
-          </li>
-        </ul>
+<body>
+  <form action="http://httpbin.org/post" method="post">
+    <div class="First">
+      <div class="element_group">
+        <label for="Surname">Surname</label>
+        <input type="text" id="Surname">
       </div>
 
-      <br>
-
-      <div id="Second" class="First">
-        <ul>
-          <li>
-            <label for="yoursite">Site</label>
-            <input type="text" id="yoursite">
-          </li>
-
-          <li>
-            <label for="yourEmail">Email</label>
-            <input type="text" id="yourEmail">
-          </li>
-
-          <li>
-            <label for="yourPhoto">Phone</label>
-            <input type="text" id="yourPhoto">
-          </li>
-        </ul>
+      <div class="element_group">
+        <label for="Firstname">Firstname</label>
+        <input type="text" id="Firstname">
       </div>
 
-      <br>
+      <div class="element_group">
+        <label for="Middlename">Middlename</label>
+        <input type="text" id="Middlename">
+      </div>
 
-      <label for="password">Password</label>
-      <input class="valid" type="password" id="password" required>
+      <div class="element_group">
+        <label for="You">You are</label>
+        <input type="radio" id="You" value="male" checked> male
+        <input type="radio" id="you2" value="female" checked> female
+      </div>
 
-      <br>
-      <br>
+      <div class="element_group">
+        <label for="age">Age</label>
+        <input class="valid" type="number" id="age" min="18" max="101">
+      </div>
 
-      <span>
+      <div class="element_group">
+        <label for="from">Country of Residence</label>
+        <select id="from" size="1">
+          <option value="Rus">Россия</option>
+          <option value="Usa">США</option>
+        </select>
+      </div>
+
+      <div class="element_group">
+        <span>City</span>
+        <input type="checkbox" id="Ryz" checked> Ryazan
+        <input type="checkbox" id="Mosc" checked> Moscow
+      </div>
+
+      <div class="element_group">
+        <label for="file">Photography</label>
+        <input type="file" id="file">
+      </div>
+      <div class="element_group">
+        <hr>
+      </div>
+
+      <div class="element_group">
+        <label for="title">Title</label>
+        <select id="title" size="8" multiple>
+          <optgroup label="Technologies">
+            <option value="r1">Web Master</option>
+            <option value="r2">Database Administrator</option>
+            <option value="r3">Computer-aided design</option>
+          </optgroup>
+          <optgroup label="Finance">
+            <option value="u1">Economic Planning</option>
+            <option value="u2">Management accounting</option>
+            <option value="u3">Budgeting and planning</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="element_group">
+        <label for="range">Salary</label>
+        <input type="range" id="range" min="0" max="100" step="1" value="50">
+      </div>
+
+      <div class="element_group">
+        <textarea id="tell" name="comment">Tell us about yourself...</textarea>
+      </div>
+
+    </div>
+
+    <br>
+
+    <div id="Second" class="First">
+      <div class="element_group">
+        <label for="yoursite">Site</label>
+        <input type="text" id="yoursite">
+      </div>
+
+      <div class="element_group">
+        <label for="yourEmail">Email</label>
+        <input type="text" id="yourEmail">
+      </div>
+
+      <div class="element_group">
+        <label for="yourPhoto">Phone</label>
+        <input type="text" id="yourPhoto">
+      </div>
+    </div>
+
+    <br>
+
+    <label for="password">Password</label>
+    <input class="valid" type="password" id="password" required>
+
+    <br>
+    <br>
+
+    <div>
         <input type="submit" name="submit1" value="Отправить">
         <input type="submit" name="submit2" value="Сбросить">
-      </span>
-    </form>
-  </body>
-</html>
+    </div>
+  </form>
+</body>

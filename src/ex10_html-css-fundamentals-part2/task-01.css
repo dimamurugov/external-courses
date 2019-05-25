@@ -1,12 +1,15 @@
 form {
 
 }
-div.First::after {
+.First::after {
   content: "Personal data";
   background-color: white;
   position: absolute;
   top: 0px;
   left: 25px;
+}
+.element_group {
+  margin: 10px 0px;
 }
 .First {
   border: 2px solid black;
@@ -26,7 +29,7 @@ li {
   content: "Contact information";
   background-color: white;
   position: absolute;
-  top: 660px;
+  top: 657px;
   left: 25px;
 }
 .valid:valid {
