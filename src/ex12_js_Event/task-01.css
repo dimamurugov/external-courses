@@ -1,0 +1,29 @@
+.firstList {
+  border: 5px solid #9fded2;
+  border-radius: 7px;
+}
+.nameList {
+  background-color: #fece00;
+  font: 12pt sans-serif;
+  padding: 5px 10px;
+}
+.firstList ul {
+  list-style: none;
+  padding-left: 20px;
+  display: none;
+
+}
+.nameList::before {
+  content: "";
+  position: absolute;
+  border: 13px solid transparent;
+  border-top: 10px solid #fece00;
+  top: 40px;
+  display: none;
+}
+.firstList.open ul  {
+  display: block;
+}
+.firstList.open .nameList::before  {
+  display: block;
+}
