@@ -1,19 +1,19 @@
-.FirstList {
+.firstList {
   border: 5px solid #9fded2;
   border-radius: 7px;
 }
-.NameList {
+.nameList {
   background-color: #fece00;
   font: 12pt sans-serif;
   padding: 5px 10px;
 }
-.FirstList ul {
+.firstList ul {
   list-style: none;
   padding-left: 20px;
   display: none;
 
 }
-.NameList::before {
+.nameList::before {
   content: "";
   position: absolute;
   border: 13px solid transparent;
@@ -21,9 +21,9 @@
   top: 40px;
   display: none;
 }
-.FirstList.open ul  {
+.firstList.open ul  {
   display: block;
 }
-.FirstList.open .NameList::before  {
+.firstList.open .nameList::before  {
   display: block;
 }

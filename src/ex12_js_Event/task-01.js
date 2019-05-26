@@ -1,6 +1,6 @@
-var FirstElem = document.getElementById('ListOne');
-var NameElem = FirstElem.querySelector('.NameList');
+var firstElem = document.getElementById('listOne');
+var nameElem = firstElem.querySelector('.nameList');
 
-NameElem.onclick = function() {
-   FirstElem.classList.toggle('open');
+nameElem.onclick = function() {
+   firstElem.classList.toggle('open');
 };
