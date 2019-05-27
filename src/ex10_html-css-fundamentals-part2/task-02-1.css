@@ -1,0 +1,23 @@
+#peopleData {
+  border: 0.1px solid white;
+  margin-left: auto;
+  margin-right: auto;
+}
+tr {
+  text-align: center;
+}
+th {
+  font-size: 7pt;
+  color: #7b91a9;
+  font-family: Arial;
+}
+td {
+  padding: 7px;
+  height: 30px;
+  color: #6c718d;
+  font-family: Arial;
+  font-size: 10pt;
+}
+tr:hover {
+  background-color: #e3e6ea;
+}

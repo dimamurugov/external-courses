@@ -1,0 +1,40 @@
+form {
+
+}
+.First::after {
+  content: "Personal data";
+  background-color: white;
+  position: absolute;
+  top: 0px;
+  left: 25px;
+}
+.element_group {
+  margin: 10px 0px;
+}
+.First {
+  border: 2px solid black;
+  width: 100%;
+  padding: 7px;
+}
+li {
+   position: relative;
+   margin: 10px -20px;
+   list-style-type: none;
+}
+#tell {
+  width: 400px;
+  height: 150px;
+}
+#Second::after {
+  content: "Contact information";
+  background-color: white;
+  position: absolute;
+  top: 657px;
+  left: 25px;
+}
+.valid:valid {
+  border-color: green;
+}
+.valid:invalid {
+  border-color: red;
+}

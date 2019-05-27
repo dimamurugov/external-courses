@@ -1,0 +1,63 @@
+@media (max-width: 1345px) and (max-height: 1280px) {
+
+    html, body {
+        margin: 0;
+        width: 1345px;
+        height: 1280px;
+    }
+
+    #header {
+        justify-content: space-between;
+    }
+    #navigation, #mainSubImage, #icons, #info {
+        display: none;
+    }
+
+    #logoDesktop {
+        display: none;
+    }
+
+    #logoLaptop {
+        margin: 0;
+    }
+
+    #logoLaptop, #searchLaptop, #burgerMenu {
+        display: block;
+    }
+
+    #searchLaptop {
+        margin-right: 25px;
+    }
+
+    #mainContainer {
+        width: 1345px;
+        height: 736px;
+        background-image: url('ibackLaptop.png')
+    }
+
+    #articles {
+        flex-direction: column;
+    }
+
+    #article {
+        width: 969px;
+        margin: 0;
+    }
+
+    #mainTextUppercase {
+        top: 261px;
+        left: 288px;
+    }
+
+    #specChar {
+        top: 274px;
+        left: 296px;
+    }
+
+    #mainText {
+        top: 305px;
+        left: 389px;
+    }
+
+
+}
