@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="task.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/solid.css" integrity="sha384-QokYePQSOwpBDuhlHOsX0ymF6R/vLk/UQVz3WHa6wygxI5oGTmDTv8wahFOSspdm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/fontawesome.css" integrity="sha384-vd1e11sR28tEK9YANUtpIOdjGW14pS87bUBuOIoBILVWLFnS+MCX9T6MMf0VdPGq" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>task</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="ElementHead"><p>Help center</p></div>
+      <div class="ElementHead"><p>Our Support</p></div>
+      <div id="Profil">
+        <div id="fotoProfil"></div>
+        <p>John Doe</p>
+        <div id="iconProfil"></div>
+      </div>
+    </header>
+    <div id="main">
+     <div class="Bar">
+      <div class="myButton">
+        <button class="addbutton">ADD A BOOK</button>
+        <i class="fas fa-plus"></i>
+      </div>
+      <nav class="navigation">
+        <ul class="navList">
+          <li>
+              <div class="list">
+                  <i class="fas fa-book"></i>
+                  <a href="">Now Reading</a>
+              </div>
+          </li>
+          <li>
+              <div class="list">
+                  <i class="fas fa-globe-asia"></i>
+                  <a href="">Browse</a>
+              </div>
+          </li>
+          <li>
+              <div class="list">
+                  <i class="fas fa-shopping-cart"></i>
+                  <a href="">Buy Books</a>
+              </div>
+          </li>
+          <li>
+              <div class="list">
+                  <i class="fas fa-star"></i>
+                  <a href="">Favourite Books</a>
+              </div>
+          </li>
+          <li>
+              <div class="list">
+                  <i class="fas fa-th-list"></i>
+                  <a href="">Wishlist</a>
+              </div>
+          </li>
+          <li>
+              <div class="list">
+                  <i class="fas fa-history"></i>
+                  <a href="">History</a>
+              </div>
+          </li>
+        </ul>
+      </nav>
+      <nav class="categories">
+          <ul class="navList">
+              <li><a href="">Must Read Titles</a></li>
+              <li><a href="">Best Of List</a></li>
+              <li><a href="">Classic Novels</a></li>
+              <li><a href="">Non Fiction</a></li>
+          </ul>
+      </nav>
+
+       <div class="Developments">
+        <div class="Event">
+          <div class="Icon">
+            <i class="fas fa-history"></i>
+          </div>
+          <div class="EventText">
+              <p><span>You added</span> Fight Club <span>by</span> Chuck Palahniuk <span>to your</span> Must Read Titles.</p>
+              <p>24 minutes ago</p>
+          </div>
+        </div>
+        <div class="Event">
+            <div class="Icon">
+                <i class="fas fa-history"></i>
+            </div>
+            <div class="EventText">
+                <p><span>You added</span> The Trial <span>by</span> Franz Kafka <span>to your</span> Must Read Titles.</p>
+                <p>48 minutes ago</p>
+            </div>
+        </div>
+
+       </div>
+     </div>
+
+     <div class="menu">
+       <div id="titleBlock">
+         <p>Btowse Available Books</p>
+       </div>
+
+       <div id="filterContainer">
+
+         <div id="filterBooks">
+           <span data-filter="all">All Books</span>
+           <span data-filter="recent">Most Recent</span>
+           <span data-filter="popular">Most popular</span>
+           <span data-filter="free">Free Books</span>
+         </div>
+        <div id="Search">
+          <div id="SearchMenu"></div>
+            <input type="text" id="inputField" name="search" value="    Enter Keywords" >
+        </div>
+       </div>
+       <div id="content">
+
+       </div>
+      </div>
+     </div>
+
+
+    <footer>
+      <div id="footerConteiner">
+        <div class="footerElemtnt"><div id="iconQustion"></div></div>
+        <div class="footerElemtnt"><div id="iconShest"></div></div>
+      </div>
+    </footer>
+    <script src="creatingBook.js"></script>
+    <script src="eventRating.js"></script>
+    <script src="filterBook.js"></script>
+  </body>
+   
+</html>
